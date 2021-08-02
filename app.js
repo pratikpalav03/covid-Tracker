@@ -201,6 +201,7 @@ renderData = (country_data) => {
 renderWorldData = (world_data, status) => {
     let res = []
     world_data.forEach(e => {
+        console.log("pratik",e)
         switch(status) {
             case CASE_STATUS.confirmed:
                 res.push(e.TotalConfirmed)
