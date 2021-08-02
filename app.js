@@ -236,6 +236,7 @@ loadAllTimeChart = async(country) => {
         deaths_data = renderWorldData(world_data, CASE_STATUS.deaths)
 
     } else{
+        console.log("ss");
         let confirmed =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.confirmed)
         let recovered =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.recovered)
         let deaths =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.deaths)
