@@ -238,7 +238,7 @@ loadAllTimeChart = async(country) => {
 
     } else{
         console.log("ss");
-        let confirmed =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.confirmed)
+        let confirmed =  await covidApi.getCountryAllTimeCases(country, confirmed)
         let recovered =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.recovered)
         let deaths =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.deaths)
 
