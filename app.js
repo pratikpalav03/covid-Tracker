@@ -127,7 +127,7 @@ loadsummary = async (country) => {
 
     let summaryData = await covidApi.getsummary()
 
-    let summary = summaryData.Global
+    let summary = summaryData.Global || null
 
     if (!isGlobal(country)) {
         summary = summaryData.Countries?.filter(e => e.Slug === country)[0]
