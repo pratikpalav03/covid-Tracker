@@ -152,9 +152,9 @@ loadsummary = async (country) => {
         let row = `
             <tr>
                 <td>${casesByCountries[i]?.Country}</td>
-                <td>${numberWithCommas(casesByCountries[i]?.TotalConfirmed)}</td>
-                <td>${numberWithCommas(casesByCountries[i]?.TotalRecovered)}</td>
-                <td>${numberWithCommas(casesByCountries[i]?.TotalDeaths)}</td>
+                <td>${numberWithCommas(Global?.TotalConfirmed)}</td>
+                <td>${numberWithCommas(Global?.TotalRecovered)}</td>
+                <td>${numberWithCommas(Global?.TotalDeaths)}</td>
             </tr>
         `
         table_countries_body.innerHTML += row
