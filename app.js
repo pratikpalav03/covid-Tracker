@@ -43,9 +43,9 @@ window.onload = async () => {
 loadData = async (country) => {
     startLoading()
 
-   /* await loadsummary(country)
+   /* await loadsummary(country)*/
 
-    await loadsummary(country)*/
+    await loadsummary(country)
 
     await loadAllTimeChart(country)
 
@@ -120,7 +120,7 @@ loadsummary = async (country) => {
     }
 }*/
 
-/*
+
 loadsummary = async (country) => {
 
     // country = Slug
@@ -161,7 +161,7 @@ loadsummary = async (country) => {
     }
 }
 
-*/
+
 
 initAllTimesChart = async () => {
     let options = {
