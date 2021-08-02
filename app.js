@@ -133,7 +133,6 @@ loadsummary = async (country) => {
         summary = summaryData.Countries?.filter(e => e.Slug === country)[0]
     }
     
- localStorage.setItem("TotalConfirmed", summary?.TotalConfirmed)
     showConfirmedTotal(summary.TotalConfirmed)
     showRecoveredTotal(summary.TotalRecovered)
     showDeathsTotal(summary.TotalDeaths)
