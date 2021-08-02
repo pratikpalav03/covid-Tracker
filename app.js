@@ -239,8 +239,8 @@ loadAllTimeChart = async(country) => {
     } else{
         console.log("pratik",country);
         let confirmed =  await covidApi.renderWorldData(country,CASE_STATUS.confirmed)
-        let recovered =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.recovered)
-        let deaths =  await covidApi.getCountryAllTimeCases(country, CASE_STATUS.deaths)
+        let recovered =  await covidApi.renderWorldData(country, CASE_STATUS.recovered)
+        let deaths =  await covidApi.renderWorldData(country, CASE_STATUS.deaths)
 
         confirm_data = renderData(confirmed)
         recovered_data = renderData(recovered)
